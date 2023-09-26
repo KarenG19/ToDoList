@@ -39,5 +39,5 @@ Route::middleware([
     Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
     Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('posts.edit');
     Route::post('/posts/update', [PostController::class, 'update'])->name('posts.update');
-    Route::post('/posts/{post}/delete', [PostController::class, 'destroy'])->name('posts.destroy');
+    Route::get('/posts/{post}/delete', [PostController::class, 'destroy'])->name('posts.destroy');
 });

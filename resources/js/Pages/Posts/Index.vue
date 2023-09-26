@@ -1,6 +1,6 @@
 <script setup>
     
-    import { Head, Link } from '@inertiajs/vue3';
+    import { Link } from '@inertiajs/vue3';
     import AppLayout from '@/Layouts/AppLayout.vue';
     import EditIcon from './EditIcon.vue';
     import DeleteIcon from './DeleteIcon.vue';
@@ -26,7 +26,7 @@
                 </div>
                 <div class="bg-gray-50">
                     <table class="table-auto">
-                        <tbody class="">
+                        <tbody>
                             <tr v-for="post in posts" :key="post.id">
                                 <td class="border px-4 py-2">
                                     <input type="checkbox">
@@ -40,7 +40,7 @@
                                 </td>
                             </tr>
                         </tbody>
-                  </table>
+                    </table>
                 </div>
             </div>
         </div>
