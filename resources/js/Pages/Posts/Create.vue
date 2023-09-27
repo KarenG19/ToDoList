@@ -25,18 +25,22 @@
             </h2>
         </div>
 
-        <div class="py-2">
+        <div class="py-6">
             <div class="min-h-screen flex flex-col items-center pt-6 sm:pt-0">
-                <form class="w-full max-w-sm" @submit.prevent="submit()">
-                    <div class="py-12 flex flex-col items-center">
-                        <div class="">
-                            <input v-model="form.title" class="rounded-md shadow-sm border-slate-300">
-                        </div>
-                        <div class="py-8">
-                            <Button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-8 rounded">Add</Button>
-                        </div>
+                <div class="bg-gray-200 shadow-md rounded-lg">
+                    <div class="px-6 py-2">
+                        <form class="w-full" @submit.prevent="submit()">
+                            <div class="py-12 flex flex-col items-center">
+                                <div class="">
+                                    <input v-model="form.title" class="rounded-md shadow-sm border-slate-300" autofocus>
+                                </div>
+                                <div class="pt-6">
+                                    <Button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-8 rounded">Add</Button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </AppLayout>
