@@ -8,8 +8,8 @@
     });
 
     const form = useForm({
-        title: props.post.title,
         id: props.post.id,
+        title: props.post.title, 
     });
 
     function submit(){
